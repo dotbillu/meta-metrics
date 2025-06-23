@@ -4,8 +4,23 @@ Meta Metrics is a **full-stack web application** designed to help you track, ana
 
 ---
 
+**🔗 Live Demo:** [https://meta-metrics.vercel.app/dashboard](https://meta-metrics.vercel.app/dashboard)  
 **🔗 Portfolio:** [https://tempporfolio.tiiny.site/](https://tempporfolio.tiiny.site/)  
 **👤 Author:** Abhay
+
+---
+
+## 🖼️ App Screenshots
+
+<p align="center">
+  <img src="images/Screenshot%20from%202025-06-23%2017-12-33.png" alt="Dashboard Screenshot 1" width="700"/>
+</p>
+<p align="center">
+  <img src="images/Screenshot%20from%202025-06-23%2017-12-38.png" alt="Dashboard Screenshot 2" width="700"/>
+</p>
+<p align="center">
+  <img src="images/Screenshot%20from%202025-06-23%2017-21-37.png" alt="Dashboard Screenshot 3" width="700"/>
+</p>
 
 ---
 
@@ -74,6 +89,10 @@ meta-metrics/
 ├── docs/
 │   ├── architecture.md
 │   └── tech-stack.md
+├── images/
+│   ├── Screenshot from 2025-06-23 17-12-33.png
+│   ├── Screenshot from 2025-06-23 17-12-38.png
+│   └── Screenshot from 2025-06-23 17-21-37.png
 ├── README.md
 ├── .gitignore
 └── vercel.json
