@@ -4,7 +4,7 @@ Meta Metrics is a **full-stack web application** designed to help you track, ana
 
 ---
 
-**🔗 Live Demo:** https://meta-metrics-abhays-projects-57d71e73.vercel.app/
+**🔗 Live Demo:** https://meta-metrics.vercel.app/
 **🔗 Portfolio:** https://dotbillu.github.io/Portfolio/
 **👤 Author:** Abhay
 

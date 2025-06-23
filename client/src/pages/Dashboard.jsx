@@ -2,14 +2,14 @@ import React, { useEffect, useState } from 'react';
 import axios from '../services/axios';
 import PostForm from '../components/PostForm';
 import { BarChart3, TrendingUp, Users, Eye, MessageCircle, Share2, Heart, Calendar, Trash2, Download, Search, Filter } from 'lucide-react';
-import { Link } from 'react-router-dom'; // already present
+import { Link } from 'react-router-dom';
 
 const Dashboard = () => {
   const [posts, setPosts] = useState([]);
   const [loading, setLoading] = useState(true);
   const [searchTerm, setSearchTerm] = useState('');
   const [filterPlatform, setFilterPlatform] = useState('all');
-  const [sortBy, setSortBy] = useState('score'); // <-- Add this for sorting
+  const [sortBy, setSortBy] = useState('score');
 
   const fetchPosts = async () => {
     try {
@@ -130,15 +130,15 @@ const Dashboard = () => {
       <div className="max-w-7xl mx-auto px-6 py-8">
         {/* Create Post Section */}
         <div className="mb-8">
-          <div className="bg-white/70 dark:bg-gray-800/70 backdrop-blur-sm rounded-3xl shadow-xl border border-gray-200/50 dark:border-gray-700/50 overflow-hidden">
-            <div className="bg-gradient-to-r from-blue-500/10 via-purple-500/10 to-blue-500/10 px-8 py-6 border-b border-gray-200/30 dark:border-gray-700/30">
-              <h2 className="text-2xl font-bold text-gray-800 dark:text-gray-100 flex items-center gap-3">
-                <div className="w-10 h-10 bg-blue-500 rounded-xl flex items-center justify-center">
+          <div className="bg-gradient-to-br from-blue-50 via-white to-blue-100 backdrop-blur-sm rounded-3xl shadow-xl border border-blue-100 overflow-hidden">
+            <div className="bg-gradient-to-r from-blue-600/10 via-blue-400/10 to-blue-200/10 px-8 py-6 border-b border-blue-100">
+              <h2 className="text-2xl font-bold text-gray-800 flex items-center gap-3">
+                <div className="w-10 h-10 bg-blue-600 rounded-xl flex items-center justify-center">
                   <span className="text-white text-xl">+</span>
                 </div>
                 Create New Post
               </h2>
-              <p className="text-gray-600 dark:text-gray-300 mt-2">
+              <p className="text-gray-600 mt-2">
                 Add a new social media post to track its performance
               </p>
             </div>
@@ -171,6 +171,7 @@ const Dashboard = () => {
                 <option value="all">All Platforms</option>
                 <option value="facebook">Facebook</option>
                 <option value="instagram">Instagram</option>
+                
               </select>
             </div>
             {/* Sorting Dropdown */}
