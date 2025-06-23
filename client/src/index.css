@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Optional: Custom Global Styles */
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #18181b;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: #18181b;
+  color: #f3f4f6; /* Tailwind's gray-100 */
+}
+
+/* Optional overrides if needed */
+a {
+  @apply font-medium text-blue-400 no-underline hover:text-blue-500;
+}
+
+h1 {
+  @apply text-4xl font-bold leading-tight;
+}
+
+button {
+  @apply rounded-lg px-4 py-2 text-white font-medium bg-blue-500 hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2 transition;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #111827;
+    background-color: #ffffff;
+  }
+
+  a:hover {
+    color: #1d4ed8; /* Tailwind blue-700 */
+  }
+
+  button {
+    background-color: #2563eb;
+  }
+}
